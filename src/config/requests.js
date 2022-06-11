@@ -1,7 +1,7 @@
 // https://api.themoviedb.org/3
 // Key API a6caf6d086cedb27034352bbc36c3f75
 
-const API_KEY = "a6caf6d086cedb27034352bbc36c3f75";
+const API_KEY = "";
 const BASE_URL = "https://api.themoviedb.org/3";
 
 
