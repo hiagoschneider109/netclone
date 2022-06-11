@@ -4,7 +4,6 @@ import { useState } from 'react';
 import './Nav.scss'
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
-import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import NotificationsIcon from '@material-ui/icons/Notifications'
 
 function Nav() {
@@ -51,10 +50,7 @@ function Nav() {
             <SearchIcon />
           </a>
           <a href="/*" className="nav__action">
-            DIRECT
-          </a>
-          <a href="/#" className="nav__action">
-            <CardGiftcardIcon />
+            Jeunesse
           </a>
           <a href="/#" className="nav__action">
             <NotificationsIcon />

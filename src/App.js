@@ -1,6 +1,7 @@
 
 import './App.scss';
 import Footer from './components/Footer';
+import Banner from './components/Banner';
 import Nav from './components/Nav'
 
 function App() {
@@ -8,6 +9,8 @@ function App() {
     <div className="App">
       {/* navbar */}
       <Nav />
+
+      <Banner />
 
       <div className="test"></div>
       {/* banner */}
