@@ -1,0 +1,25 @@
+.row{
+    padding: 1rem 4%;
+    color: #fff;
+    &__title{
+        font-size: 1.7rem;
+    }
+    &__images{
+        display: flex;
+        align-items: center;
+        overflow-x: visible;
+        overflow-y: hidden;
+        width: 100%;
+        padding: .5rem 0;
+        .row__image{
+            width: 300px;
+            padding: 0.4rem;
+            transition: transform 0.1s ease-in;
+            transition-delay: .5s, 0;
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
