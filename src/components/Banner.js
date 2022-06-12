@@ -6,10 +6,17 @@ import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 
 import requests from '../config/requests';
+import QuickView from './QuickView';
 import axios from 'axios';
 
 function Banner() {
  const [movie, setMovie] = useState([]);
+ const [popup, setPopup] = useState(false);
+ 
+ function handleClickPopup(){
+    popup ? setPopup(false) : setPopup(true);
+ }
+
 
  useEffect(() => {
     async function fetchData() {
@@ -49,9 +56,13 @@ function Banner() {
             </p>
             <div className="banner__buttons">
                 <button className="banner__button banner__button--play"><PlayArrowIcon /> Lecture</button>
-                <button className="banner__button"><HelpOutlineIcon /> Plus d'infos</button>
+                <button className="banner__button" onClick={handleClickPopup}><HelpOutlineIcon /> Plus d'infos</button>
             </div>
         </div>
+        <QuickView bannerStyle={bannerStyle} 
+                    movie={movie} 
+                    popup={handleClickPopup}
+                    popupStatus={popup}/>
     </header>
   )
 }
